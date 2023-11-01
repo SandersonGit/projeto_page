@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 250px;
+    background-color: #ffffff;
+    
+    
+}
+
+footer {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    margin-top: 40px;
+}
+main {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 24px;
+    gap: 14px;
+    background-color: gray;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header .container ul {
+    display: flex;
+    /* margin-right: 20px; */
+    gap: 30px;
+    list-style: none;
+    color: black;
+    border-bottom: 4px solid black;
+    
+}
+.container {
+    border-bottom: 4px solid black;
+}
+
+header .container ul li {
+    cursor: pointer;
+}
+
+
+
+main .img-container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 4%;
+   
+}
+main .img-container img {
+    height: 100%;
+    margin-right: 25px;
+   border-radius: 10%;
+}
+
+
+.text {
+    font-size: 1em;
+    overflow: auto;
+    text-overflow: ellipsis;
+    text-align: left;
+    
+}
+.text h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 8px;
+    max-height: 100%;
+    
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 8px;
+    text-transform: uppercase;
+   
+}
+
+@media (max-width: 539px) {
+    main .img-container {
+        width: 500px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .text {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 2px;
+        
+        padding: 2px;
+    }
+    main .img-container img {
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    header .container {
+        flex-direction: column;
+        height: 250px;
+    }
+    header .container ul {
+        border-bottom: 30px;
+    }
+}
+
